@@ -24,4 +24,4 @@ class Database:
       return await conn.fetchrow(query, *args)
     
 
-database = Database()
+db = Database()
