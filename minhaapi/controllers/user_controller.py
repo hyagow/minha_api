@@ -3,7 +3,7 @@ from minhaapi.models.user import User
 from minhaapi.db.connection import db
 
 class UserController:
-  async def get_user(self) -> List[User]:
+  async def get_users(self) -> List[User]:
     query = "SELECT id, username, email FROM users"
     return await db.fetch(query)
   
